@@ -1,4 +1,8 @@
-.background {
-    background-image: url('landscape-1633082714118-1057.jpg');
+.header-10-sub .background {
+    background-image: url("./landscape-ai.jpg");
     opacity: opacity value;
+}
+
+.contacts-3 a {
+    color: #F23827;
 }
