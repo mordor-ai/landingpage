@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+@import url('https://fontlibrary.org//face/orkney');
 .header-10-sub .background {
     background-image: url("./landscape-ai.jpg");
     opacity: opacity value;
@@ -5,4 +7,14 @@
 
 .contacts-3 a {
     color: #F23827;
+}
+
+.orkney {
+    font-family: 'OrkneyRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.marvel {
+    font-family: 'Marvel', sans-serif;
 }
