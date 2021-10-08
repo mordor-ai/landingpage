@@ -9,13 +9,30 @@
 </head>
 
 <body>
-    <button id="switch-lang">Switch Language</button>
-    <h1><span lang="en">Hello</span> <span lang="es">Hola</span></h1>
-    <p lang="en">I really enjoy coding.</p>
-    <p lang="es">Me gusta mucho la codificación.</p>
+
+    <div class="container">
+        <h1 id="description">Show English Text</h1>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Language Option
+          <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li onclick="toggleLanguage('English')"><a href="#">English</a></li>
+                <li onclick="toggleLanguage('Korean')"><a href="#">Korean</a></li>
+            </ul>
+        </div>
+    </div>
+    <select id="mbPOCControlsLangDrop"></select>
+
+    <span data-mlr-text>Sausages</span>
+
+    <span data-mlr-text>Carrot</span>
+    <span data-mlr-text>oubli</span>
+
+    <p>More info on the blog: <a href="https://benfrain.com/blog">benfrain.com/blog</a></p>
 
 </body>
 <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.js"></script>
 <script src="./index.js"></script>
+<script src="jquery.MultiLanguage.min.js"></script>
 
 </html>
