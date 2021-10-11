@@ -1,20 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
-@import url('https://fontlibrary.org//face/orkney');
-.header-10-sub .background {
-    background-image: url("./landscape-ai.jpg");
-    opacity: opacity value;
-}
-
-.contacts-3 a {
-    color: #F23827;
-}
-
-.orkney {
-    font-family: 'OrkneyRegular';
-    font-weight: normal;
-    font-style: normal;
-}
-
-.marvel {
-    font-family: 'Marvel', sans-serif;
-}
+        @font-face {
+            font-family: 'Marvel';
+            src: url('fonts/marvel/Marvel-Regular.ttf');
+        }
+        
+        @font-face {
+            font-family: 'orkney';
+            src: url('fonts/orkney/orkney-light.otf');
+        }
+        /*  #video-container {
+            position: absolute;
+          
+        }
+        
+        */
+        
+        #video-container {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+        
+        #video-container>video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        @supports (object-fit: cover) {
+            #video-container>video {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+        }
+        
+        .header-10-sub .background {
+            background-image: url("./images/Ground_Position_Light_Shunt_animation.gif");
+            opacity: opacity value;
+        }
+        
+        .contacts-3 a {
+            color: #F23827;
+        }
+        
+        h1.orkney {
+            font-family: 'orkney'
+        }
+        
+        p.marvel {
+            font-family: 'Marvel';
+        }
+        
+        h1 {
+            font-family: 'orkney', sans-serif;
+        }
+        
+        .header-10-sub .hero-unit h1 {
+            font-family: 'orkney', sans-serif;
+        }
+        
+        .contacts-3 {
+            font-family: 'Marvel', sans-serif;
+        }
+        
+        .contacts-3 h3 {
+            font-family: 'Marvel', sans-serif;
+        }
+        
+        .header-10-sub .hero-unit p {
+            font-family: 'Marvel', sans-serif;
+        }
+        
+        .contacts-3 label.h6 {
+            font-family: 'Marvel', sans-serif;
+        }
+        /* Carousel Header Styles */
+        
+        .header-text {
+            position: absolute;
+            top: 20%;
+            left: 1.8%;
+            right: auto;
+            width: 96.66666666666666%;
+            color: #fff;
+        }
+        /* Carousel Styles */
+        
+        .carousel-indicators .active {
+            background-color: #2980b9;
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            max-height: 460px
+        }
+        
+        .carousel-control {
+            width: 0;
+        }
+        
+        .carousel-control.left,
+        .carousel-control.right {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            background-image: none;
+            background-repeat: no-repeat;
+            text-shadow: none;
+        }
+        
+        .carousel-control.left span {
+            padding: 15px;
+        }
+        
+        .carousel-control.right span {
+            padding: 15px;
+        }
+        
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-prev,
+        .carousel-control .icon-next {
+            position: absolute;
+            top: 45%;
+            z-index: 5;
+            display: inline-block;
+        }
+        
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .icon-prev {
+            left: 0;
+        }
+        
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-next {
+            right: 0;
+        }
+        
+        .carousel-control.left span,
+        .carousel-control.right span {
+            background-color: #000;
+        }
+        
+        .carousel-control.left span:hover,
+        .carousel-control.right span:hover {
+            opacity: .7;
+            filter: alpha(opacity=70);
+        }
