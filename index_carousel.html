@@ -3,12 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>RAILwAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- this code between header -->
+    <link rel="shortcut icon" href="Developer/flat-ui/images/favicon.ico">
     <link rel="stylesheet" href="Developer/flat-ui/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="Developer/flat-ui/css/flat-ui.css">
     <!-- Using only with Flat-UI (free) -->
@@ -35,135 +39,127 @@
 
     <link rel="stylesheet" href="index.css">
 
-
 </head>
-<!-- this code directly before </body> -->
+
+<body>
+    <div class="page-wrapper">
+        <!-- header -->
+        <section class="header-1 content-16 v-center">
+            <div>
+                <div class="container">
+                    <!-- <h3><img src="./logo.png" alt="" width="747" height="697"></h3> -->
+                    <h3> <object type="image/svg+xml" data="image.svg">
+                    <!-- Your fall back here -->
+                    <img class="img-responsive" src="Logounique.svg" style="width:50%" alt="RAILwAI"/>
+                </object></h3>
+                    <h3><object type="image/svg+xml" data="image.svg">
+                    <!-- Your fall back here -->
+                    <img class="img-responsive" src="railwai.svg" style="width:50%" alt="RAILwAI"/>
+                </object>
+                    </h3>
+                    <!-- <p class="lead">Your data is on the smart track</p> -->
+                </div>
+            </div>
+            <a class="control-btn fui-arrow-down" href="#myHead"> </a>
+        </section>
+        <section id="myHead" class="header-1-sub">
+            <div id="pt-main" class="page-transitions pt-perspective">
+                <div class="pt-page pt-page-1">
+                    <div class="background">
+                        &nbsp;
+                    </div>
+                    <div class="caption">
+                        <div class="container">
+                            <h3>We’ve created the product that will help your <br /> startup to look even better.</h3>
+                            <p class="lead">
+                                You have the design, you have the code
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-page pt-page-2">
+                    <div class="background">
+                        &nbsp;
+                    </div>
+                    <div class="caption">
+                        <div class="container">
+                            <h3>Example headline.</h3>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-page pt-page-3">
+                    <div class="background">
+                        &nbsp;
+                    </div>
+                    <div class="caption">
+                        <div class="container">
+                            <h3>Another example headline.</h3>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container controls">
+                    <a class="control-prev" href="#"><span class="fui-arrow-left"> </span></a>
+                    <a class="control-next" href="#"><span class="fui-arrow-right"> </span></a>
+                    <!-- <a class="control-btn fui-arrow-down" href="#contact"></a> -->
+                </div>
+
+            </div>
+
+        </section>
+        <!-- CONTACT -->
+
+        <section id="contact" class="contacts-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h3>Get in touch with us</h3>
+                        <p>Email us directly or call us.</p>
+                        <div class="links">
+                            <a href="#"><span class="fui-phone"></span>+33 4 67 13 00 00</a><br>
+                            <a href="#"><span class="fui-mail"></span>contact@railwai.com</a>
+                        </div>
+                        <h6>Where to find us</h6>
+                        <p>CAP OMEGA</p>
+                        <div class="map">
+                            <!--map-->
+                            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1051.1308262114105!2d3.9134464111535374!3d43.61882550684143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6a58f8a9b7d01%3A0xb76b13a1449f9026!2sCap%20Om%C3%A9ga!5e0!3m2!1sfr!2sfr!4v1633363222168!5m2!1sfr!2sfr"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-1">
+                        <h3>Leave us a message</h3>
+                        <p>Don’t hesitate to ask us something.</p>
+                        <form>
+                            <label class="h6">Name / Last Name</label>
+                            <input type="text" class="form-control">
+                            <label class="h6">E-mail</label>
+                            <input type="text" class="form-control">
+                            <label class="h6">Message</label>
+                            <textarea rows="7" class="form-control"></textarea>
+                            <button type="submit" class="btn btn-primary"><span class="fui-mail"></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+<!-- Placed at the end of the document so the pages load faster -->
 <script src="Developer/common-files/js/jquery-1.10.2.min.js"></script>
 <script src="Developer/flat-ui/js/bootstrap.min.js"></script>
-<script src="Developer/common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
 <script src="Developer/common-files/js/modernizr.custom.js"></script>
 <script src="Developer/common-files/js/page-transitions.js"></script>
 <script src="Developer/common-files/js/easing.min.js"></script>
 <script src="Developer/common-files/js/jquery.svg.js"></script>
 <script src="Developer/common-files/js/jquery.svganim.js"></script>
-<script src="Developer/common-files/js/jquery.parallax.min.js"></script>
-<script src="Developer/common-files/js/jquery.sharrre.min.js"></script>
 <script src="Developer/common-files/js/startup-kit.js"></script>
-
-
-
-<body>
-    <!-- header -->
-    <section class="content-16 v-center">
-        <div>
-            <div class="container">
-                <!-- <h3><img src="./logo.png" alt="" width="747" height="697"></h3> -->
-                <h3> <object type="image/svg+xml" data="image.svg">
-                    <!-- Your fall back here -->
-                    <img class="img-responsive" src="Logounique.svg" style="width:50%" alt="RAILwAI"/>
-                </object></h3>
-                <h3><object type="image/svg+xml" data="image.svg">
-                    <!-- Your fall back here -->
-                    <img class="img-responsive" src="railwai.svg" style="width:50%" alt="RAILwAI"/>
-                </object>
-                </h3>
-                <!-- <p class="lead">Your data is on the smart track</p> -->
-            </div>
-        </div>
-        <a class="control-btn fui-arrow-down" href="#myHead"> </a>
-    </section>
-
-    <!-- essai carousel -->
-    <section class="header-1-sub">
-        <div id="pt-main" class="page-transitions pt-perspective">
-            <div class="pt-page pt-page-1">
-                <div class="background">
-                    &nbsp;
-                </div>
-                <div class="caption">
-                    <div class="container">
-                        <h3>We’ve created the product that will help your <br /> startup to look even better.</h3>
-                        <p class="lead">
-                            You have the design, you have the code
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="pt-page pt-page-2">
-                <div class="background">
-                    &nbsp;
-                </div>
-                <div class="caption">
-                    <div class="container">
-                        <h3>Example headline.</h3>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="pt-page pt-page-3">
-                <div class="background">
-                    &nbsp;
-                </div>
-                <div class="caption">
-                    <div class="container">
-                        <h3>Another example headline.</h3>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="container controls">
-                <a class="control-prev" href="#"><span class="fui-arrow-left"> </span></a>
-                <a class="control-next" href="#"><span class="fui-arrow-right"> </span></a>
-            </div>
-        </div>
-        <a class="control-btn fui-arrow-down" href="#contact"></a>
-    </section>
-
-
-
-
-
-    <!-- CONTACT -->
-
-    <section id="contact" class="contacts-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <h3>Get in touch with us</h3>
-                    <p>Email us directly or call us.</p>
-                    <div class="links">
-                        <a href="#"><span class="fui-phone"></span>+33 4 67 13 00 00</a><br>
-                        <a href="#"><span class="fui-mail"></span>contact@railwai.com</a>
-                    </div>
-                    <h6>Where to find us</h6>
-                    <p>CAP OMEGA</p>
-                    <div class="map">
-                        <!--map-->
-                        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1051.1308262114105!2d3.9134464111535374!3d43.61882550684143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6a58f8a9b7d01%3A0xb76b13a1449f9026!2sCap%20Om%C3%A9ga!5e0!3m2!1sfr!2sfr!4v1633363222168!5m2!1sfr!2sfr"></iframe>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-sm-offset-1">
-                    <h3>Leave us a message</h3>
-                    <p>Don’t hesitate to ask us something.</p>
-                    <form>
-                        <label class="h6">Name / Last Name</label>
-                        <input type="text" class="form-control">
-                        <label class="h6">E-mail</label>
-                        <input type="text" class="form-control">
-                        <label class="h6">Message</label>
-                        <textarea rows="7" class="form-control"></textarea>
-                        <button type="submit" class="btn btn-primary"><span class="fui-mail"></span></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</body>
 <script src="./lang.js"></script>
+<script src="js/script.js"></script>
 
 </html>

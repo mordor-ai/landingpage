@@ -41,14 +41,15 @@
                 object-fit: cover;
             }
         }
-        
+        /*
         .header-10-sub .background {
             background-image: url("./images/Ground_Position_Light_Shunt_animation.gif");
-            opacity: opacity value;
+            opacity: 0.75;
         }
+        */
         
         .header-1-sub .pt-page-1 .background {
-            background-image: url("images/Alstom_Citadis_401_n°2011_TAM_Place_de_France.jpg");
+            background-image: url("images/Ground_Position_Light_Shunt_animation.gif");
             opacity: 75;
             filter: alpha(opacity=7500);
             opacity: 0.75;
@@ -72,6 +73,12 @@
             opacity: 0.75;
             filter: alpha(opacity=75);
             background-position: 50% 30%;
+        }
+        
+        .header-1-sub .pt-page-current,
+        .header-1-sub .no-js .pt-page {
+            visibility: visible;
+            z-index: 1;
         }
         
         .contacts-3 a {
