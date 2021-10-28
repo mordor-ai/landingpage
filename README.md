@@ -14,3 +14,10 @@ https://www.pexels.com/search/videos/background/
 ### carousel
 
 https://getbootstrap.com/docs/4.0/components/carousel/
+
+### lang
+
+https://benfrain.com/creating-a-language-switcher-in-javascript/
+
+
+

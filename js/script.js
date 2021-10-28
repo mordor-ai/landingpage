@@ -1,4 +1,47 @@
-function fadedEls(el, shift) {
+// loading  contact 
+var langs = ['en', 'fr', 'it'];
+var langCode = '';
+var langJS = null;
+
+var translate = function(jsdata) {
+    $("[tkey]").each(function(index) {
+        var strTr = jsdata[$(this).attr('tkey')];
+        $(this).html(strTr);
+    });
+};
+
+var select_language = function(langCode) {
+    if (langs.includes(langCode))
+        $.getJSON('/lang/' + langCode + '.json', translate);
+    else
+        $.getJSON('/lang/en.json', translate);
+};
+(function($) {
+    $(function() {
+        $("#menu").load("/menu.html");
+        $("#headLogo").load("/headLogo.html");
+        $("#features").load("/features.html");
+        $("#contact").load("/contact.html");
+        $("#footer").load("/footer.html");
+
+
+
+        /** at starting :  defining the default lang */
+        langCode = navigator.language.substr(0, 2);
+        select_language(langCode);
+        $('#select-lang').val(langCode).prop('selected', true);
+        $("#select-lang").val(langCode).change();
+
+    });
+})(jQuery);
+
+/* $("#select-lang").selectpicker({
+    style: 'btn-hg btn-primary',
+    menuStyle: 'dropdown-inverse'
+}); */
+
+
+/* function fadedEls(el, shift) {
     el.css('opacity', 0);
 
     switch (shift) {
@@ -80,4 +123,4 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         $(window).resize().scroll();
 
     });
-})(jQuery);
+})(jQuery); */

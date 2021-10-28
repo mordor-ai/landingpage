@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch index image",
+            "file": "${workspaceFolder}/index_image.html"
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch index.html",
+            "file": "${workspaceFolder}/index.html"
+        },
+        {
+            "name": "Launch carousel",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "file": "${workspaceFolder}/index_carousel.html"
+        }
+    ]
+}

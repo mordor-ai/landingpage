@@ -1,0 +1,173 @@
+// There is a path to Startup framework
+@startup-basePath: "../Developer/";
+@opacity:0.75;
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}flat-ui/less/mixins.less';
+@import '@{startup-basePath}common-files/less/mixins.less';
+@import '@{startup-basePath}common-files/less/common.less';
+@import '@{startup-basePath}common-files/less/navbar.less';
+@import '@{startup-basePath}common-files/less/helper.less';
+
+/* If you don't use any of these blocks just remove unnecessary LESS files */
+/* contacts */
+@import '@{startup-basePath}ui-kit/ui-kit-contacts/less/contact-3.less';
+
+
+/* content */
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-1.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-2.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-3.less';
+@import '@{startup-basePath}ui-kit/ui-kit-content/less/content-6.less';
+
+
+/* footer */
+@import '@{startup-basePath}ui-kit/ui-kit-footer/less/footer-2.less';
+/* header */
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-1.less';
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-3.less';
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-10.less';
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-21.less';
+/*
+body > section, footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+*/
+
+.rwLYellow{
+    color: #f29102  !important;
+}
+
+.rwLOrange{
+    color: #e84f1c  !important;
+}
+.rwOrange{
+    color: #e5342a  !important;
+}
+
+.rwGrey{
+    color: #585846  !important;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('../fonts/marvel/Marvel-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'orkney';
+    src: url('../fonts/orkney/orkney-light.otf');
+}
+
+.orkney {
+    font-family: 'orkney' !important
+}
+
+.marvel {
+    font-family: 'Marvel' !important 
+}
+
+#video-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .opacity(@opacity);
+}
+
+#video-container>video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@supports (object-fit: cover) {
+    #video-container>video {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+.header-10-sub {
+    .background {
+        background-image: url("../images/Ground_Position_Light_Shunt_animation.gif");
+        .opacity(@opacity);
+    }
+}
+
+.header-1-sub {
+    .pt-page-1 {
+        .background {
+            background-image: url("/images/Ground_Position_Light_Shunt_animation.gif");
+            .opacity(@opacity);
+            background-position: 50% 30%;
+        }
+    }
+
+    .pt-page-2 {
+        .background {
+            background-image: url("../images/gif___sunset_train_by_turst67-d6mdbgy1.gif");
+            .opacity(@opacity);
+            background-position: 50% 30%;
+        }
+    }
+
+    .pt-page-3 {
+        .background {
+            background-image: url("../images/Speeding-train...-Imgur.gif");
+            .opacity(@opacity);
+            background-position: 50% 30%;
+        }
+    }
+}
+
+
+.header-1-sub {
+    .pt-page-current,
+    .no-js .pt-page {
+        visibility: visible;
+        z-index: 1;
+    }
+
+    h3, p {        font-family: 'Marvel', sans-serif;
+    }
+    p {
+        font-family: 'Marvel', sans-serif;
+    }
+}
+
+.contacts-3 a {
+    color: #F23827;
+}
+
+
+h1 {
+    font-family: 'orkney', sans-serif;
+}
+
+.header-10-sub .hero-unit h1 {
+    font-family: 'orkney', sans-serif;
+}
+
+.contacts-3 {
+    font-family: 'Marvel', sans-serif;
+}
+
+.contacts-3 h3 {
+    font-family: 'Marvel', sans-serif;
+}
+
+.header-10-sub .hero-unit p {
+    font-family: 'Marvel', sans-serif;
+}
+
+.contacts-3 label.h6 {
+    font-family: 'Marvel', sans-serif;
+}

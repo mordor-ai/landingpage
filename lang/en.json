@@ -1,4 +1,17 @@
 {
     "text1": "RAILwAI brings your maintenance operations in a new era",
-    "text2": "We’ve created the solutions that will help to<br> anticipate failures in your infrastructure before they happen."
+    "text2": "We’ve created the solutions that will help to<br> anticipate failures in your infrastructure before they happen.",
+    "contact": "Get in touch with us",
+    "email": "Email us directly or call us.",
+    "location": "Where to find us",
+    "message": "Leave us a message",
+    "ask": "Don’t hesitate to ask us something.",
+    "name": "Name / Last Name",
+    "mhome": "HOME",
+    "mabout": "ABOUT",
+    "mfeatures": "FEATURES",
+    "mcontact": "CONTACT"
+
+
+
 }
