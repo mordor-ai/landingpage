@@ -16,32 +16,10 @@ var select_language = function(langCode) {
     else
         $.getJSON('/lang/en.json', translate);
 };
-(function($) {
-    $(function() {
-        $("#menu").load("/menu.html");
-        $("#headLogo").load("/headLogo.html");
-        $("#features").load("/features.html");
-        $("#contact").load("/contact.html");
-        $("#footer").load("/footer.html");
 
 
 
-        /** at starting :  defining the default lang */
-        langCode = navigator.language.substr(0, 2);
-        select_language(langCode);
-        $('#select-lang').val(langCode).prop('selected', true);
-        $("#select-lang").val(langCode).change();
-
-    });
-})(jQuery);
-
-/* $("#select-lang").selectpicker({
-    style: 'btn-hg btn-primary',
-    menuStyle: 'dropdown-inverse'
-}); */
-
-
-/* function fadedEls(el, shift) {
+var fadedEls = function(el, shift) {
     el.css('opacity', 0);
 
     switch (shift) {
@@ -55,7 +33,6 @@ var select_language = function(langCode) {
             shift = el.eq(0).outerHeight() / 2;
             break;
     }
-
     $(window).resize(function() {
         if (!el.hasClass('ani-processed')) {
             el.eq(0).data('scrollPos', el.eq(0).offset().top - $(window).height() + shift);
@@ -66,13 +43,14 @@ var select_language = function(langCode) {
                 el.addClass('ani-processed');
                 el.each(function(idx) {
                     $(this).delay(idx * 200).animate({
-                        opacity : 1
+                        opacity: 1
                     }, 600);
                 });
             }
         }
     });
-}
+};
+
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
     window.mobile = true;
@@ -82,22 +60,41 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
 (function($) {
     $(function() {
-       
+        $("#menu").load("/snipets/menu.html");
+        $("#headLogo").load("/snipets/headLogo.html");
+        $("#description_image").load("/snipets/description_image.html");
+        $("#description_video").load("/snipets/description_video.html");
+        $("#description_carousel").load("/snipets/description_carousel.html");
+        $("#features").load("/snipets/features.html");
+        $("#features_img").load("/snipets/features_img.html");
+        $("#crew").load("/snipets/crew.html");
+        $("#contact").load("/snipets/contact.html");
+        $("#footer").load("/snipets/footer.html");
+
+
+        /** at starting :  defining the default lang */
+        langCode = navigator.language.substr(0, 2);
+        select_language(langCode);
+        $('#select-lang').val(langCode).prop('selected', true);
+        $("#select-lang").val(langCode).change();
+
+
+
         // Focus state for append/prepend inputs
         $('.input-prepend, .input-append').on('focus', 'input', function() {
             $(this).closest('.control-group, form').addClass('focus');
         }).on('blur', 'input', function() {
             $(this).closest('.control-group, form').removeClass('focus');
         });
- 
-       
+
+
 
         // features ani
         fadedEls($('.features').parent().find('h3'), 'h');
         $('.features > *').each(function() {
             fadedEls($(this), 150);
-        });     
-        
+        });
+
 
         // responsive
         $(window).resize(function() {
@@ -122,5 +119,9 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
         $(window).resize().scroll();
 
+
     });
-})(jQuery); */
+
+
+
+})(jQuery);

@@ -10,7 +10,20 @@
     "mhome": "HOME",
     "mabout": "ABOUT",
     "mfeatures": "FEATURES",
-    "mcontact": "CONTACT"
+    "mcontact": "CONTACT",
+    "crewTitle": "The Team",
+    "featureTitle": "Innovation Led by AI",
+    "featureSubTitle": "RailwAI delivers a software-as-a-service solution helps to anticipate failures before they happen",
+    "featureKey1": "Acquiring",
+    "featureLbl1": "Railwail can be connected to a large range of IIoT devices or Sensors",
+    "featureKey2": "Monitoring",
+    "featureLbl2": " Railwail can be connected to a large range of IIoT devices or Sensors",
+    "featureKey3": "Advanced Analytics",
+    "featureLbl3": " Railwail can be connected to a large range of IIoT devices or Sensors",
+    "featureKey4": "Predicting",
+    "featureLbl4": " Railwail can be connected to a large range of IIoT devices or Sensors"
+
+
 
 
 
