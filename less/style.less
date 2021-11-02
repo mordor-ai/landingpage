@@ -1,6 +1,6 @@
 // There is a path to Startup framework
 @startup-basePath: "../Developer/";
-@opacity:0.75;
+@opacity: 0.5;
 @import '@{startup-basePath}flat-ui/less/variables.less';
 @import '@{startup-basePath}flat-ui/less/mixins.less';
 @import '@{startup-basePath}common-files/less/mixins.less';
@@ -33,42 +33,45 @@
 /* footer */
 @import '@{startup-basePath}ui-kit/ui-kit-footer/less/footer-2.less';
 @import '@{startup-basePath}ui-kit/ui-kit-footer/less/footer-4.less';
-/*
-body > section, footer {
+
+body>section,
+footer {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-*/
+
 .select_join select {
     font-family: Marvel !important;
 }
 
-body{
-    font-family: Marvel,  Arial, sans-serif !important;
-}
-.rwLYellow{
-    color: #f29102  !important;
+body {
+    font-family: Marvel, Arial, sans-serif !important;
 }
 
-.rwLOrange{
-    color: #e84f1c  !important;
-}
-.rwOrange{
-    color: #e5342a  !important;
+.rwLYellow {
+    color: #f29102 !important;
 }
 
-.rwGrey{
-    color: #585846  !important;
+.rwLOrange {
+    color: #e84f1c !important;
+}
+
+.rwOrange {
+    color: #e5342a !important;
+}
+
+.rwGrey {
+    color: #585846 !important;
 }
 
 @font-face {
     font-family: 'Marvel';
-    src: url('../fonts/marvel/Marvel-Regular.ttf');
+    src: url('/fonts/marvel/Marvel-Regular.ttf');
 }
 
 @font-face {
     font-family: 'orkney';
-    src: url('../fonts/orkney/orkney-light.otf');
+    src: url('/fonts/orkney/orkney-light.otf');
 }
 
 .orkney {
@@ -76,7 +79,7 @@ body{
 }
 
 .marvel {
-    font-family: 'Marvel' !important 
+    font-family: 'Marvel' !important
 }
 
 #video-container {
@@ -109,47 +112,75 @@ body{
 
 .header-10-sub {
     .background {
-        background-image: url("../images/Ground_Position_Light_Shunt_animation.gif");
+        background-image: url("/images/Ground_Position_Light_Shunt_animation.gif");
         .opacity(@opacity);
     }
+
 }
 
 .header-1-sub {
+    .background {
+        height: 100vh;
+        min-height: 600px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .opacity(@opacity);
+    }
+
     .pt-page-1 {
         .background {
             background-image: url("/images/Ground_Position_Light_Shunt_animation.gif");
-            .opacity(@opacity);
-            background-position: 50% 30%;
+            .opacity(0.5);
         }
     }
 
     .pt-page-2 {
         .background {
-            background-image: url("../images/gif___sunset_train_by_turst67-d6mdbgy1.gif");
-            .opacity(@opacity);
-            background-position: 50% 30%;
+            background-image: url("/images/LGV_Est_PK217.jpg");
+            .opacity(0.5);
         }
     }
+
 
     .pt-page-3 {
         .background {
-            background-image: url("../images/Speeding-train...-Imgur.gif");
-            .opacity(@opacity);
-            background-position: 50% 30%;
+            background-image: url("/images/Speeding-train...-Imgur.gif");
+            .opacity(0.5);
         }
+
     }
 }
 
+.carousel-fullscreen .carousel-inner .item {
+    height: 100vh;
+    min-height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-fullscreen .carousel-caption {
+    top: 40%;
+    bottom: auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
 
 .header-1-sub {
+
     .pt-page-current,
     .no-js .pt-page {
         visibility: visible;
         z-index: 1;
     }
 
-    h3, p {        font-family: 'Marvel', sans-serif;
+    h3,
+    p {
+        font-family: 'Marvel', sans-serif;
     }
+
     p {
         font-family: 'Marvel', sans-serif;
     }

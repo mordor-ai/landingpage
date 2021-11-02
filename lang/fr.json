@@ -10,6 +10,19 @@
     "mhome": "ACCUEIL",
     "mabout": "À PROPOS",
     "mfeatures": "FONCTIONNALITÉS",
-    "mcontact": "CONTACT"
+    "mcontact": "CONTACT",
+    "crewTitle": "L'équipe",
+    "featureTitle": "L'IA au coeur de l'innovation ",
+    "featureSubTitle": "RailwAI offre une solution logicielle en tant que service qui permet d'anticiper les défauts avant  qu'ils ne surviennent",
+    "featureKey1": "Acquisition",
+    "featureLbl1": "Railwail can be connected to a large range of IIoT devices or Sensors",
+    "featureKey2": "Contrôler",
+    "featureLbl2": " Railwail can be connected to a large range of IIoT devices or Sensors",
+    "featureKey3": "Analyses avancées",
+    "featureLbl3": " Railwail can be connected to a large range of IIoT devices or Sensors",
+    "featureKey4": "Prédire",
+    "featureLbl4": " Railwail can be connected to a large range of IIoT devices or Sensors"
+
+
 
 }

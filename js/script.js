@@ -90,10 +90,11 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
 
         // features ani
-        fadedEls($('.features').parent().find('h3'), 'h');
+        /*fadedEls($('.features').parent().find('h3'), 'h');
         $('.features > *').each(function() {
             fadedEls($(this), 150);
         });
+        */
 
 
         // responsive
