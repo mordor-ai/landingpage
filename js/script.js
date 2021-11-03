@@ -60,16 +60,16 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
 (function($) {
     $(function() {
-        $("#menu").load("/snipets/menu.html");
-        $("#headLogo").load("/snipets/headLogo.html");
-        $("#description_image").load("/snipets/description_image.html");
-        $("#description_video").load("/snipets/description_video.html");
-        $("#description_carousel").load("/snipets/description_carousel.html");
-        $("#features").load("/snipets/features.html");
-        $("#features_img").load("/snipets/features_img.html");
-        $("#crew").load("/snipets/crew.html");
-        $("#contact").load("/snipets/contact.html");
-        $("#footer").load("/snipets/footer.html");
+        $("#menu").load("snipets/menu.html");
+        $("#headLogo").load("snipets/headLogo.html");
+        $("#description_image").load("snipets/description_image.html");
+        $("#description_video").load("snipets/description_video.html");
+        $("#description_carousel").load("snipets/description_carousel.html");
+        $("#features").load("snipets/features.html");
+        $("#features_img").load("snipets/features_img.html");
+        $("#crew").load("snipets/crew.html");
+        $("#contact").load("snipets/contact.html");
+        $("#footer").load("snipets/footer.html");
 
 
         /** at starting :  defining the default lang */
