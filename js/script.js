@@ -2,6 +2,8 @@
 var langs = ['en', 'fr', 'it'];
 var langCode = '';
 var langJS = null;
+var snipDir = '../snipets/';
+var langDir = '../lang/'
 
 
 var translate = function(jsdata) {
@@ -13,9 +15,9 @@ var translate = function(jsdata) {
 
 var select_language = function(langCode) {
     if (langs.includes(langCode))
-        $.getJSON('../lang/' + langCode + '.json', translate);
+        $.getJSON(langDir + langCode + '.json', translate);
     else
-        $.getJSON('../lang/en.json', translate);
+        $.getJSON(langDir + 'en.json', translate);
 };
 
 
@@ -61,17 +63,17 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
 (function($) {
     $(function() {
-        console.log("../snipets/menu.html");
-        $("#menu").load("../snipets/menu.html");
-        $("#headLogo").load("../snipets/headLogo.html");
-        $("#description_image").load("../snipets/description_image.html");
-        $("#description_video").load("../snipets/description_video.html");
-        $("#description_carousel").load("../snipets/description_carousel.html");
-        $("#features").load("../snipets/features.html");
-        $("#features_img").load("../snipets/features_img.html");
-        $("#crew").load("../snipets/crew.html");
-        $("#contact").load("../snipets/contact.html");
-        $("#footer").load("../snipets/footer.html");
+        console.log(snipDir + "menu.html");
+        $("#menu").load(snipDir + "menu.html");
+        $("#headLogo").load(snipDir + "headLogo.html");
+        $("#description_image").load(snipDir + "description_image.html");
+        $("#description_video").load(snipDir + "description_video.html");
+        $("#description_carousel").load(snipDir + "description_carousel.html");
+        $("#features").load(snipDir + "features.html");
+        $("#features_img").load(snipDir + "features_img.html");
+        $("#crew").load(snipDir + "crew.html");
+        $("#contact").load(snipDir + "contact.html");
+        $("#footer").load(snipDir + "footer.html");
 
 
         /** at starting :  defining the default lang */
