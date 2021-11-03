@@ -2,8 +2,8 @@
 var langs = ['en', 'fr', 'it'];
 var langCode = '';
 var langJS = null;
-var snipDir = '../snipets/';
-var langDir = '../lang/'
+var snipDir = './snipets/';
+var langDir = './lang/'
 
 
 var translate = function(jsdata) {
