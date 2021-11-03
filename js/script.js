@@ -13,9 +13,9 @@ var translate = function(jsdata) {
 
 var select_language = function(langCode) {
     if (langs.includes(langCode))
-        $.getJSON('/lang/' + langCode + '.json', translate);
+        $.getJSON('../lang/' + langCode + '.json', translate);
     else
-        $.getJSON('/lang/en.json', translate);
+        $.getJSON('../lang/en.json', translate);
 };
 
 
