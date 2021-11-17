@@ -1,6 +1,6 @@
 {
     "text1": "RAILwAI vous emmène dans une nouvelle ère pour vos opérations de maintenance",
-    "text2": "Nous avons créé les solutions qui vous aidents à <br> anticiper les pannes dans votre infrastructure avant qu'elles ne surviennent.",
+    "text2": "Nous avons créé les solutions qui vous aident à <br> anticiper les pannes dans votre infrastructure avant qu'elles ne surviennent.",
     "text3": "Exemple de Titre",
     "text4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "text5": "Un autre exemple de titre",
@@ -20,11 +20,11 @@
     "crewTitle": "L'équipe",
     "featureTitle": "L'IA au coeur de l'innovation ",
     "featureSubTitle": "RailwAI offre une solution logicielle en tant que service qui permet d'anticiper les défauts avant  qu'ils ne surviennent",
-    "featureKey1": "Acquisition",
+    "featureKey1": "Acquérir",
     "featureLbl1": "Railwail can be connected to a large range of IIoT devices or Sensors",
     "featureKey2": "Contrôler",
     "featureLbl2": " Railwail can be connected to a large range of IIoT devices or Sensors",
-    "featureKey3": "Analyses avancées",
+    "featureKey3": "Analyser",
     "featureLbl3": " Railwail can be connected to a large range of IIoT devices or Sensors",
     "featureKey4": "Prédire",
     "featureLbl4": " Railwail can be connected to a large range of IIoT devices or Sensors"
